@@ -10,8 +10,8 @@ function Sidebar(props) {
     <div className={'sidebar ' + (open ? 'open' : '')}>
         <div>
             <img id="side-logo" src={require('../../../resources/logos/ht-logo-white.png')} alt="" />
-            <h2 id="sidebar_name">Hugo Tamm</h2>
-            <h3 id="sidebar_url">huxystudios.com</h3>
+            <h2 id="sidebar-name">Hugo Tamm</h2>
+            <h3 id="sidebar-url">huxystudios.com</h3>
         </div>
 
         <div>
@@ -52,14 +52,24 @@ function Sidebar(props) {
             </div>
         </div>
 
+        <div id="sectionDivider">
+            _
+        </div>
+
         <h3 class="sidebar-section">Socials</h3>
         <div>
             <div class="sidebar-media">
                 <Icon icon="ph:linkedin-logo-bold" />
+                <h3 class="icon-text">LinkedIn</h3>
             </div>
             <div class="sidebar-media">
                 <Icon icon="codicon:github" />
+                <h3 class="icon-text">GitHub</h3>
             </div>
+        </div>
+
+        <div id="sidebar-copyright">
+            <p>© 2022 Hugo Tamm All Rights Reserved.</p>
         </div>
     </div>
   )
