@@ -2,47 +2,64 @@ import React from 'react'
 import './Sidebar.css'
 import { Icon } from '@iconify/react';
 
-function Sidebar() {
+function Sidebar(props) {
+
+    const {open, setOpen} = props;
+
   return (
-    <div id="sidebar">
+    <div className={'sidebar ' + (open ? 'open' : '')}>
         <div>
             <img id="side-logo" src={require('../../../resources/logos/ht-logo-white.png')} alt="" />
+            <h2 id="sidebar_name">Hugo Tamm</h2>
+            <h3 id="sidebar_url">huxystudios.com</h3>
         </div>
 
         <div>
-            <div id="side-button">
+            <div id="side-button" onClick={() => setOpen(!open)}>
                 <Icon id="side-button-icon" icon="material-symbols:chevron-right-rounded" />
             </div>
         </div>
         
-        <h3>Navigation</h3>
+        <h3 class="sidebar-section">Navigation</h3>
         <div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="material-symbols:home-outline-rounded" />
+                <Icon icon="material-symbols:home-outline-rounded" />
+                <h3 class="icon-text">Home</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="ic:baseline-work-outline" />
+                <Icon icon="ic:baseline-work-outline" />
+                <h3 class="icon-text">Work</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="mdi:user-circle-outline" />
+                <Icon icon="mdi:user-circle-outline" />
+                <h3 class="icon-text">About</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="ic:outline-email" />
+                <Icon icon="ic:outline-email" />
+                <h3 class="icon-text">Contact</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="uil:graph-bar" />
+                <Icon icon="uil:graph-bar" />
+                <h3 class="icon-text">Statistics</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="octicon:gear-16" />
+                <Icon icon="octicon:gear-16" />
+                <h3 class="icon-text">Settings</h3>
             </div>
             <div class="sidebar-icons">
-                <Icon class="sidebar-icon" icon="ph:copyright-bold" />
+                <Icon icon="ph:copyright-bold" />
+                <h3 class="icon-text">Imprint</h3>
             </div>
         </div>
 
-        <h3>Socials</h3>
+        <h3 class="sidebar-section">Socials</h3>
         <div>
-            media
+            <div class="sidebar-media">
+                <Icon icon="ph:linkedin-logo-bold" />
+            </div>
+            <div class="sidebar-media">
+                <Icon icon="codicon:github" />
+            </div>
         </div>
     </div>
   )
