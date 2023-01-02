@@ -8,7 +8,7 @@ function Sidebar(props) {
 
   return (
     <div className={'sidebar ' + (open ? 'open' : '')}>
-        <div>
+        <div className="sidebar-logo">
             <img id="side-logo" src={require('../../../resources/logos/ht-logo-white.png')} alt="" />
             <h2 id="sidebar-name">Hugo Tamm</h2>
             <h3 id="sidebar-url">huxystudios.com</h3>
@@ -20,35 +20,35 @@ function Sidebar(props) {
             </div>
         </div>
         
-        <h3 class="sidebar-section">Navigation</h3>
+        <h3 className="sidebar-section">Navigation</h3>
         <div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="material-symbols:home-outline-rounded" />
-                <h3 class="icon-text">Home</h3>
+                <h3 className="icon-text">Home</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="ic:baseline-work-outline" />
-                <h3 class="icon-text">Work</h3>
+                <h3 className="icon-text">Work</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="mdi:user-circle-outline" />
-                <h3 class="icon-text">About</h3>
+                <h3 className="icon-text">About</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="ic:outline-email" />
-                <h3 class="icon-text">Contact</h3>
+                <h3 className="icon-text">Contact</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="uil:graph-bar" />
-                <h3 class="icon-text">Statistics</h3>
+                <h3 className="icon-text">Statistics</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="octicon:gear-16" />
-                <h3 class="icon-text">Settings</h3>
+                <h3 className="icon-text">Settings</h3>
             </div>
-            <div class="sidebar-icons">
+            <div className="sidebar-icons">
                 <Icon icon="ph:copyright-bold" />
-                <h3 class="icon-text">Imprint</h3>
+                <h3 className="icon-text">Imprint</h3>
             </div>
         </div>
 
@@ -56,15 +56,15 @@ function Sidebar(props) {
             _
         </div>
 
-        <h3 class="sidebar-section">Socials</h3>
+        <h3 className="sidebar-section">Socials</h3>
         <div>
-            <div class="sidebar-media">
+            <div className="sidebar-media">
                 <Icon icon="ph:linkedin-logo-bold" />
-                <h3 class="icon-text">LinkedIn</h3>
+                <h3 className="icon-text">LinkedIn</h3>
             </div>
-            <div class="sidebar-media">
+            <div className="sidebar-media">
                 <Icon icon="codicon:github" />
-                <h3 class="icon-text">GitHub</h3>
+                <h3 className="icon-text">GitHub</h3>
             </div>
         </div>
 
