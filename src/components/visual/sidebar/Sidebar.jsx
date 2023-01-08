@@ -69,7 +69,7 @@ function Sidebar(props) {
         </div>
 
         <div id="sidebar-copyright">
-            <p>© 2022 Hugo Tamm All Rights Reserved.</p>
+            <p>© 2022 Hugo Tamm. All Rights Reserved.</p>
         </div>
     </div>
   )
